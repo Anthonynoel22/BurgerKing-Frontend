@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CartProvider} from "./Context/BasketContext";
+// import { CartProvider} from "./Context/BasketContext";
 import { useState } from "react";
 
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import Login from "./Pages/Login";
-import Home from "./Pages/Home";
-import Admin from "./Pages/Admin";
-import Order from "./Pages/Order";
+import Header from "./Components/Header.jsx";
+// import Footer from "./Components/Footer.jsx";
+/* import Login from "./Pages/Login.jsx";
+import Home from "./Pages/Home.jsx";
+import Admin from "./Pages/Admin.jsx";
+import Order from "./Pages/Order.jsx"; */
 
 import "./App.css";
 
@@ -16,25 +16,25 @@ const App =() => {
     const handleOpenLoginModal = () => {
         setIsModalOpen(true);
     };
-    const handleCloseLoginModal = () => {
+/*     const handleCloseLoginModal = () => {
         setIsModalOpen(false);
-    };
+    }; */
 
     return (
-        <CartProvider>
+        // <CartProvider>
             <Router>
                 <div className="app-container">
                 <Header onOpenLoginModal={handleOpenLoginModal}/>
-                <Routes>
+{/*                 <Routes>
                     <Route path="/" element={<Home/>}></Route>
                     <Route path="/admin" element={<Admin/>}></Route>
                     <Route path="/order/:id" element={<Order/>}></Route>
-                </Routes>
-                <Footer/>
-                {isModalOpen && <Login onClose={handleCloseLoginModal}/>}
+                </Routes> */}
+                {/* <Footer/>
+                {isModalOpen && <Login onClose={handleCloseLoginModal}/>} */}
                 </div>
             </Router>
-        </CartProvider>
+        // </CartProvider>
     );
 };
 
