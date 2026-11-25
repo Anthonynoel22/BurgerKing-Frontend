@@ -25,7 +25,7 @@ const Header = ({ onOpenLoginModal }) => {
 
     return(
         <div className="header">
-            <div className="headr-name" onClick={onClickToHome}>
+            <div className="header-name" onClick={onClickToHome}>
                 <img src={logo} alt="Le roi du burger"/>
                 <h1>Le roi du burger</h1>
             </div>
