@@ -1,8 +1,8 @@
 import "../Styles/Color.scss";
 
-const Button = ({ onclick, type, text}) => {
+const Button = ({ onClick, type, text }) => {
     return (
-        <button onClick={onclick} className={`button-${type}`}>
+        <button onClick={onClick} className={`button-${type}`}>
             {text}
         </button>
     );
