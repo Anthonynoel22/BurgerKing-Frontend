@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 // Fonction pour vérifier si deux produits sont les mêmes
 const isSameProduct = (item, product) =>
