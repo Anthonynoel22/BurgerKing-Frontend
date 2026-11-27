@@ -44,12 +44,24 @@ const Basket = () => {
     }
 };
 
-    return(
+/*     return(
         <div className="basket">
-            
+            {cart.lenght >  ? (
+                <div className="sticky-basket">
+                    <h1>Votre panier</h1>
+                    <div>
+                        {cart.map((product, index) => (
+                            <div key={index} className="basket-item">
+                                <div className="info-title-product">
+                                    <img src={product.image}  />
+                                    <p>{product.name}</p>
+                                </div>
+                            </div>
+                    </div>
+            )
         </div>
     );
 };
 
-export default Basket;
+export default Basket; */
 
